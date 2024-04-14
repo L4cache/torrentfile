@@ -344,6 +344,15 @@ def execute(args: List[str] = None) -> List[str]:
         help="path to write torrent file",
     )
 
+
+    create_parser.add_argument(
+        "--ow",
+        "--overwrite",
+        action="store_true",
+        dest="overwrite",
+        help="overwrite output file if it already exists",
+    )
+
     create_parser.add_argument(
         "--prog",
         "--progress",
