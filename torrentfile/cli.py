@@ -481,6 +481,13 @@ def execute(args: List[str] = None) -> List[str]:
     )
 
     edit_parser.add_argument(
+        "--public",
+        action="store_true",
+        help="make torrent public",
+        dest="public",
+    )
+
+    edit_parser.add_argument(
         "--comment",
         help="replaces any existing comment with <comment>",
         metavar="<comment>",
