@@ -25,9 +25,9 @@ import math
 import ctypes
 import shutil
 import platform
-from typing import Callable, Any, Tuple, List
-import re
 from pathlib import Path
+from typing import Any, Callable, List, Tuple
+import re
 
 if platform.system() == "Windows":  # pragma: nocover
     kernel32 = ctypes.windll.kernel32
