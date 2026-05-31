@@ -93,7 +93,9 @@ def edit_torrent(metafile: str, args: dict) -> dict:
         info["private"] = 1
 
     if args.get("public"):
-        info.pop("private", None)
+        if info.pop("private", None):
+            meta["announce"] = ""
+            meta["announce-list"] = [[""]]
 
     if "announce" in args:
         val = args.get("announce", None)
