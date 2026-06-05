@@ -359,7 +359,7 @@ def execute(args: List[str] = None) -> List[str]:
     create_parser.add_argument(
         "--prog",
         "--progress",
-        default="1",
+        default="2",
         action="store",
         dest="progress",
         metavar="<int>",
